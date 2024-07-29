@@ -1,10 +1,10 @@
-using AspNetCoreWebAPI8.Models;
+using Bookstore.Models;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddDbContext<AspNetCoreWebAPI8.Models.Bookstore>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("BookContext")));
+builder.Services.AddDbContext<Bookstore.Models.Bookstore_DB>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("BookContext")));
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
