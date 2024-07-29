@@ -1,11 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Bookstore.Models;
 
-namespace AspNetCoreWebAPI8.Models
+namespace Bookstore.Models
 {
-    public class Bookstore:DbContext
+    public class Bookstore_DB:DbContext
     {
-        public Bookstore(DbContextOptions<Bookstore> options) : base(options) 
+        public Bookstore_DB(DbContextOptions<Bookstore_DB> options) : base(options) 
         {
             
         }
